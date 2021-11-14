@@ -18,3 +18,11 @@ def jugar_una_partida(numero,minimo,maximo):
         victoria, minimo, maximo = jugar_una_vez(numero, minimo, maximo)
         if (victoria):
             return
+def jugar():
+    minimo, maximo = decidir_limites()
+    while True:
+        numero = pedir_entrada_del_numero_incognita(minimo, maximo)
+        jugar_una_partida(numero, minimo, maximo)
+        if not pedir_entrada_si_o_no("¿Desea jugar una nueva partida?"):
+            print("¡Hasta pronto!")
+            return
