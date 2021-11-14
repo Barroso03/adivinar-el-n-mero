@@ -13,4 +13,8 @@ def jugar_una_vez(numero,minimo,maximo):
         print("¡Ha ganado!")
 def pedir_entrada_del_numero_incognita(minimo,maximo):
     return pedir_entrada_numero_delimitado("Introduzca el numero a adivinar", minimo, maximo)
-
+def jugar_una_partida(numero,minimo,maximo):
+    while True:
+        victoria, minimo, maximo = jugar_una_vez(numero, minimo, maximo)
+        if (victoria):
+            return
