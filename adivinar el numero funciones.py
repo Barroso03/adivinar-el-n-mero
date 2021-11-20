@@ -19,7 +19,7 @@ def jugar_una_partida(numero,minimo,maximo):
         if (victoria):
             return
 def jugar():
-    minimo, maximo = decidir_limites()
+    minimo, maximo = decidir_limites(0,99)
     while True:
         numero = pedir_entrada_del_numero_incognita(minimo, maximo)
         jugar_una_partida(numero, minimo, maximo)
